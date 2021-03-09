@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # Local apps
     'accounts',
     'pages',
+    'places',
 ]
 
 MIDDLEWARE = [
