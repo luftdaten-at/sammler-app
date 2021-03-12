@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from collectors.views import LocationList
 
 urlpatterns = [
     # Admin
@@ -25,4 +26,5 @@ urlpatterns = [
     
     # Local apps
     path('', include('pages.urls')),
+    path('locations/', LocationList.as_view(), name='locations'),
 ]
